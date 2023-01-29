@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'quems_ticketing-station-app';
+  formTitleData = 'HELLO MAMA!';
+  increasingNumber = 0;
+  userName = "N/A";
+
+  ngOnInit() {
+    this.changeName('Tor');
+  }
+
+  changeName(name: string) {
+    this.formTitleData = `Hello ${name}!`;
+  }
+
+  increaseNumber() {
+    this.increasingNumber++;
+  }
+
+  changeYourNameText(name: string) {
+    this.userName = name;
+  }
 }

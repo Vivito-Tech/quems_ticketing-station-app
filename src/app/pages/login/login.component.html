@@ -1,0 +1,10 @@
+<div class="login-wrapper">
+    <h1>{{ formTitle }}</h1>
+    <p>{{ formSubtitle }}</p>
+    <button (click)="pinindot.emit(100)">clickme</button>
+
+    <br><br><br><br>
+
+    <label for="name">Enter Name: </label>
+    <input type="text" name="name" [(ngModel)]="userName" (ngModelChange)="nagtype.emit(userName)">
+</div>
