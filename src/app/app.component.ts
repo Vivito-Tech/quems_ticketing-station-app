@@ -12,11 +12,11 @@ export class AppComponent {
   userName = "N/A";
 
   ngOnInit() {
-    this.changeName('Tor');
+    this.changeName('Ticket Station Login');
   }
 
   changeName(name: string) {
-    this.formTitleData = `Hello ${name}!`;
+    this.formTitleData = `${name}`;
   }
 
   increaseNumber() {

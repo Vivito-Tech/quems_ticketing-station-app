@@ -1,10 +1,27 @@
-<div class="login-wrapper">
-    <h1>{{ formTitle }}</h1>
-    <p>{{ formSubtitle }}</p>
-    <button (click)="pinindot.emit(100)">clickme</button>
+<div class="login-header" style="
+display: flex;
+flex-direction: column;
+height: 300px;
+">
+<h1 style="align-content: center; font-size:xxx-large;">{{ formTitle }}</h1>
+</div>
 
-    <br><br><br><br>
+<div class="login-username">
+   <input class="login-textboxes" type="text" name="name" placeholder="Username" [(ngModel)]="userName" (ngModelChange)="nagtype.emit(userName)" style="text-align: center; border-radius: 18px; font-size: large;">
+</div>
 
-    <label for="name">Enter Name: </label>
-    <input type="text" name="name" [(ngModel)]="userName" (ngModelChange)="nagtype.emit(userName)">
+<div class="login-password">
+    <input class="login-textboxes" type="password" name="password" placeholder="Password" style="text-align: center; border-radius: 18px; font-size: large;">
+</div>
+   
+<div class="login-button">
+    <button style="
+        width: 150px; 
+        border-radius: 8px; 
+        font-size: large; 
+        background-color: steelblue; 
+        font-weight: bold;
+        color: white;
+        border-style: none;
+        " >Login</button>
 </div>
