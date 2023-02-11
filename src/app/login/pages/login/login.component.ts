@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class LoginComponent {
   // Im expecting a value
-  @Input() formTitle: string = 'Hi worldssss!';
+  @Input() formTitle: string = 'Login';
   @Input() formSubtitle: string = "";
 
   // I will emit pinindot event
