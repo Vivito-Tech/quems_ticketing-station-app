@@ -1,5 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 .vh100 {
     height: 100vh;
+}
+
+.logo {
+    width: 60px;
+}
+
+.cement {
+    color: #232323 !important;
+}
+
+.flex-even {
+    flex: 1;
 }
