@@ -3,18 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Routes or URLs
 const routes: Routes = [
-  {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then((m) => m.LoginModule)
-  },
-  {
-    path: 'contact',
-    loadChildren: () => import('./contact/contact.module').then((m) => m.ContactModule)
-  }
+    {
+        path: 'auth',
+        loadChildren: () => import('./modules/sign-in/sign-in.module').then(m => m.SignInModule),
+    },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

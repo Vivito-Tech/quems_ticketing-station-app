@@ -1,0 +1,10 @@
+@import 'plugins/bootstrap-reboot.css';
+@import 'plugins/bootstrap-grid.min.css';
+@import 'plugins/bootstrap-utilities.css';
+@import './variables';
+@import './typography';
+@import './utils';
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
