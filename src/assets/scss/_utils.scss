@@ -1,7 +1,38 @@
+.naked-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 .card-shadow {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075), 0 6px 6px rgba(0, 0, 0, 0.082);
 }
 
+.flex-1 {
+    flex: 1;
+}
+
 .page {
     background: #eaeaea;
+}
+
+.text-large {
+    font-size: 3.5em !important;
+}
+
+.text-md {
+    font-size: 15px;
+}
+
+.text-sm {
+    font-size: 13px;
+}
+
+.text-xsm {
+    font-size: 11px;
+}
+
+.text-white {
+    color: #fff;
 }

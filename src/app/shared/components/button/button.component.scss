@@ -7,4 +7,15 @@
         padding: 10px;
         width: 100%;
     }
+
+    &.md {
+        font-size: 17px;
+        height: 60px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    &:disabled {
+        background: #808080 !important;
+    }
 }

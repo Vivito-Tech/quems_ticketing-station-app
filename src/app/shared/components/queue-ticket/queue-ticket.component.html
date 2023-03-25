@@ -1,0 +1,33 @@
+<app-generic-card>
+    <div class="queue-ticket">
+        <div class="queue-ticket__header bg-primary p-4 d-flex align-items-center">
+            <div class="flex-1">
+                <h3 class="fw-bold mb-2 text-white">RCBC Bank</h3>
+                <h6 class="fst-italic fw-bold text-white">Pacific Plaza Bldg, PPC, Palawan</h6>
+            </div>
+            <div class="queue-number-wrapper">
+                <h2 class="fw-bold text-primary text-white">#34</h2>
+            </div>
+        </div>
+        <div class="queue-ticket__body d-flex justify-content-center w-100">
+            <div class="qrcode-wrapper text-center mb-3">
+                <qrcode [qrdata]="'Your data string'" [width]="400" [errorCorrectionLevel]="'M'"></qrcode>
+                <p class="fw-bold text-sm" style="margin-top: -35px">Scan QR to get a copy on your mobile phone</p>
+            </div>
+        </div>
+        <div class="queue-ticket__footer d-flex bg-primary p-4">
+            <div class="me-3">
+                <h6 class="fw-bold text-md text-white m-0">{{ ticketData.for | slice : 0 : 10 }}</h6>
+                <p class="m-0 text-white fw-bold fst-italic text-xsm">Customer</p>
+            </div>
+            <div class="me-3">
+                <h6 class="fw-bold text-md text-white m-0">{{ ticketData.transactionName }}</h6>
+                <p class="m-0 text-white fw-bold fst-italic text-xsm">Transaction Description</p>
+            </div>
+            <div>
+                <h6 class="fw-bold text-md text-white m-0">March 25, 2023 at 10:20am</h6>
+                <p class="m-0 text-white fw-bold fst-italic text-xsm">Date</p>
+            </div>
+        </div>
+    </div>
+</app-generic-card>
