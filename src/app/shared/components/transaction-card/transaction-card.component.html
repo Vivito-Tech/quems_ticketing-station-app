@@ -1,0 +1,24 @@
+<div class="transaction-card">
+    <app-generic-card>
+        <div class="p-5 w-100">
+            <div class="transaction-card__body mb-4">
+                <div class="d-flex align-items-center">
+                    <div class="icon me-3">
+                        <i class="{{ transaction.transactionIcon }} text-primary text-large"></i>
+                    </div>
+                    <div class="transaction-name-description">
+                        <h3 class="fw-bold mb-1">{{ transaction.transactionName }}</h3>
+                        <h5>{{ transaction.transactionDescription }}</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="transaction-card__footer">
+                <app-button [customClass]="'lg'" (click)="selected.emit()">
+                    <i class="fas fa-plus me-3 text-white"></i>
+                    <span class="text-white"> Generate Queue Ticket </span>
+                </app-button>
+            </div>
+        </div>
+    </app-generic-card>
+</div>

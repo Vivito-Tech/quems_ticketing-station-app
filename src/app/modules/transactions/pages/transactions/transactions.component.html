@@ -1,0 +1,9 @@
+<div class="page d-flex w-100 vh-100 align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4" *ngFor="let t of transactions">
+                <app-transaction-card [transaction]="t" (selected)="transactionSelected(t)"></app-transaction-card>
+            </div>
+        </div>
+    </div>
+</div>

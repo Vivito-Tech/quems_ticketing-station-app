@@ -1,0 +1,13 @@
+<div class="form sign-in-form-wrapper">
+    <form id="sign-in-form" class="sign-in-form" [formGroup]="signInForm">
+        <div class="form-field mb-3">
+            <input class="bg-light rounded px-3" type="text" placeholder="Enter User ID" formControlName="userId" />
+        </div>
+
+        <div class="form-field mb-5">
+            <input class="bg-light rounded px-3" type="password" placeholder="Enter Password" formControlName="password" />
+        </div>
+
+        <app-button [customClass]="'lg'">Sign in</app-button>
+    </form>
+</div>
